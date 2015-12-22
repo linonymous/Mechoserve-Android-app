@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ProfilePersonalInfo">
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbikecompany"
+        android:layout_marginTop="10dp"
+        android:text="Bike Company"
+        android:layout_centerHorizontal="true"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        />
+
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextbikecompany"
+        android:hint="    Ex. YAMAHA"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textviewbikecompany"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewmodelno"
+        android:layout_below="@+id/edittextbikecompany"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Model Name/No"
+        android:textColor="#000000"
+        android:textSize="21dp"/>
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextmodelno"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textviewmodelno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="    Ex. Yamaha Gladiator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewyear"
+        android:layout_below="@+id/edittextmodelno"
+        android:layout_marginTop="20dp"
+        android:text="Year Of Purchase"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        />
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextyear"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textviewyear"
+        android:layout_marginTop="10dp"
+        android:hint="    Ex. 2007"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewvehicleno"
+        android:layout_below="@+id/edittextyear"
+        android:layout_marginTop="20dp"
+        android:text="Vehicle No"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        />
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextvehicleno"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textviewvehicleno"
+        android:layout_marginTop="10dp"
+        android:hint="    Ex. MH 12 - SP 7576"
+        />
+
+    <Button
+        android:id="@+id/proceedbtnb"
+        android:layout_width="250dp"
+        android:layout_below="@+id/edittextvehicleno"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text=" Appointment Request "
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"/>
+
+
+</RelativeLayout>

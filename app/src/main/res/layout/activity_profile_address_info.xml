@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ProfilePersonalInfo">
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewaddr"
+        android:layout_marginTop="10dp"
+        android:text="Address"
+        android:layout_centerHorizontal="true"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        />
+
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextaddr"
+        android:hint="    Full Address"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPostalAddress"
+        android:layout_below="@+id/textviewaddr"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewpincode"
+        android:layout_below="@+id/edittextaddr"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pincode"
+        android:textColor="#000000"
+        android:textSize="21dp"/>
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextpincode"
+        android:inputType="number"
+        android:layout_below="@+id/textviewpincode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="    Ex. 416415"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewregion"
+        android:layout_below="@+id/edittextpincode"
+        android:layout_marginTop="20dp"
+        android:text="Region"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        />
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextregion"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textviewregion"
+        android:layout_marginTop="10dp"
+        android:hint="    Region"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewstate"
+        android:layout_below="@+id/edittextregion"
+        android:layout_marginTop="20dp"
+        android:text="State"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        />
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextstate"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textviewstate"
+        android:layout_marginTop="10dp"
+        android:hint="    State"
+        />
+
+    <Button
+        android:id="@+id/proceedbtna"
+        android:layout_width="250dp"
+        android:layout_below="@+id/edittextstate"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text=" PROCEED "
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"/>
+
+
+</RelativeLayout>

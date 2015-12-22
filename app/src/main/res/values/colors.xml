@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundWindow">#2196F3</color>
+    <color name="barColor">#0D47A1</color>
+    <color name="primaryDarkColor">#1976D2</color>
+</resources>

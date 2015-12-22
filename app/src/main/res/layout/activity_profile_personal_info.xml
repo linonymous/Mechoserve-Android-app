@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ProfilePersonalInfo">
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewname"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        />
+
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextname"
+        android:hint="    Full Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textViewname"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewemail"
+        android:layout_below="@+id/edittextname"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="21dp"/>
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextemail"
+        android:layout_below="@+id/textviewemail"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        android:hint="    example@gmail.com"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewcontact"
+        android:layout_below="@+id/edittextemail"
+        android:layout_marginTop="20dp"
+        android:text="Contact"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        />
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext_register"
+        android:id="@+id/edittextcontact"
+        android:layout_below="@+id/textviewcontact"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:hint="    Edit Phone"
+        />
+
+
+    <Button
+        android:id="@+id/proceedbtn"
+        android:layout_width="250dp"
+        android:layout_below="@+id/edittextcontact"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text=" SAVE AND PROCEED "
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"/>
+
+
+
+</RelativeLayout>
+

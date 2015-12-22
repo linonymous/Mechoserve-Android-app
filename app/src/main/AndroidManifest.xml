@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.als.mechoservemain1">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserProfile"
+            android:label="MechoServe"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HowItWorks"
+            android:label="@string/title_activity_how_it_works"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+        <activity
+            android:name=".ProfilePersonalInfo"
+            android:label="@string/title_activity_profile_personal_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+        <activity
+            android:name=".ProfileAddressInfo"
+            android:label="@string/title_activity_profile_address_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.ProfilePersonalInfo" />
+        </activity>
+        <activity
+            android:name=".ProfileBikeInfo"
+            android:label="@string/title_activity_profile_bike_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.ProfileAddressInfo" />
+        </activity>
+        <activity
+            android:name=".ProfileDateInfo"
+            android:label="@string/title_activity_profile_date_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.ProfileBikeInfo" />
+        </activity>
+        <activity
+            android:name=".ProfileFinalInfo"
+            android:label="@string/title_activity_profile_final_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+        <activity
+            android:name=".StartFirst"
+            android:label="@string/title_activity_start_first"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StartSecond"
+            android:label="@string/title_activity_start_second"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".StartThird"
+            android:label="@string/title_activity_start_third"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.als.mechoservemain1.UserProfile" />
+        </activity>
+    </application>
+
+</manifest>

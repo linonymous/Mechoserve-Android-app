@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MechoServeMain1</string>
+    <string name="title_activity_main">MechoServe</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer CLose</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Logout</string>
+    <string name="title_activity_user_profile">MechoServe</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_how_it_works">How It Works?</string>
+    <string name="title_activity_services__provided">Services_Provided</string>
+    <string name="title_activity_test">Our Services</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_profile_personal_info">Enter</string>
+    <string name="title_activity_profile_address_info">Address Details</string>
+    <string-array name="SpinnerPinCode_Item">
+        <item>411012(Dapodi)</item>
+        <item>411013(Hadapser)</item>
+    </string-array>
+    <string name="title_activity_profile_bike_info">Bike Details</string>
+    <string name="title_activity_profile_date_info">Date-Time Details</string>
+    <string name="title_activity_profile_final_info">Done!</string>
+    <string name="title_activity_start_first">MechoServe</string>
+    <string name="title_activity_start_second">Why Mechoserve?</string>
+    <string name="title_activity_start_third">Our Services For</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_change_password">Change Password</string>
+</resources>

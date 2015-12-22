@@ -1,0 +1,268 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:context="com.als.mechoservemain1.Services_Provided">
+
+
+        //code for the image of engine oil/filter change
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/oil"
+            android:layout_marginTop="10dp"
+            android:id="@+id/oil"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Engine Oil/Filter Change"
+            android:textColor="#303F9F"
+            android:layout_toRightOf="@+id/oil"
+            android:id="@+id/oil_text"
+            />
+
+        //code for air filter cleaning
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/airfilter"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/airfilter"
+            android:layout_below="@+id/oil_text"
+            android:layout_alignRight="@+id/oil_text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/oil"
+            android:textSize="18dp"
+            android:text="Air Filter Cleaning"
+            android:textColor="#303F9F"
+            android:layout_toLeftOf="@+id/airfilter"
+            android:id="@+id/airfilter_text"
+            />
+
+
+        //code for spark-plug cleaning
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sparkplug"
+            android:layout_below="@+id/airfilter_text"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sparkplug"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Spark Plug Cleaning"
+            android:textColor="#303F9F"
+            android:layout_below="@+id/airfilter"
+            android:layout_toRightOf="@+id/sparkplug"
+            android:id="@+id/sparkplug_text"
+            />
+
+
+        //code for clutch adjustment
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/clutch"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/clutch"
+            android:layout_below="@+id/sparkplug_text"
+            android:layout_alignRight="@+id/airfilter"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/sparkplug"
+            android:textSize="18dp"
+            android:text="Clutch Adjustment"
+            android:textColor="#303F9F"
+            android:layout_toLeftOf="@+id/clutch"
+            android:id="@+id/clutch_text"
+            />
+
+
+        //code for engine idle speed
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/engine"
+            android:layout_below="@+id/clutch_text"
+            android:layout_marginTop="25dp"
+            android:id="@+id/engine"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Engine idle Speed"
+            android:textColor="#303F9F"
+            android:layout_below="@+id/clutch"
+            android:layout_toRightOf="@+id/sparkplug"
+            android:id="@+id/engine_text"
+            />
+
+
+        //code for Brake pads
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/brk"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/brk"
+            android:layout_below="@+id/engine_text"
+            android:layout_alignRight="@+id/clutch"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/engine"
+            android:textSize="18dp"
+            android:text="Brake pads/Liner Adjustment"
+            android:textColor="#303F9F"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/clutch"
+            android:id="@+id/brk_text"
+            />
+
+
+        //code for chain adjustment
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/chain"
+            android:layout_below="@+id/brk_text"
+            android:layout_marginTop="25dp"
+            android:id="@+id/chain"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Chain Adjustment"
+            android:textColor="#303F9F"
+            android:layout_below="@+id/brk"
+            android:layout_toRightOf="@+id/sparkplug"
+            android:id="@+id/chain_text"
+            />
+
+
+
+        //code for wheel ajustment
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wheel"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/wheel"
+            android:layout_below="@+id/chain_text"
+            android:layout_alignRight="@+id/brk"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/chain"
+            android:textSize="18dp"
+            android:text="Wheel alignment checking"
+            android:textColor="#303F9F"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/wheel"
+            android:id="@+id/wheel_text"
+            />
+
+
+        //code for Oiling
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/oiling"
+            android:layout_below="@+id/wheel_text"
+            android:layout_marginTop="25dp"
+            android:id="@+id/oiling"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Oiling your Vehicle"
+            android:textColor="#303F9F"
+            android:layout_below="@+id/wheel"
+            android:layout_toRightOf="@+id/sparkplug"
+            android:id="@+id/oiling_text"
+            />
+
+
+        //code for washing
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/washing"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/washing"
+            android:layout_below="@+id/oiling_text"
+            android:layout_alignRight="@+id/wheel"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/oiling"
+            android:textSize="18dp"
+            android:text="Washing Vehicle"
+            android:textColor="#303F9F"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/washing"
+            android:id="@+id/washing_text"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
